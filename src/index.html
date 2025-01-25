@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/src/assets/icons/favicon.svg">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <title>WILDLIFE</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#header" class="header__logo-link">
+                        <img src="./assets/icons/logo.svg" alt="Survival" class="header__logo-pic">
+                        <div class="logo">WILDLIFE</div>
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#articles" class="header__link">Articles</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#contacts" class="header__link">Contacts</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#email" class="header__link">
+                                <img src="./assets/icons/magnifier.svg" alt="search" class="header__search-pic">
+                            </a>
+                        </li>
+                        <button type="submit" class="sing-in__button">Sing in</button>
+                    </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
+                </nav>
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro" id="header">
+            <div class="wrapper">
+                <h1 class="intro__title">Survival</h1>
+                <p class="intro__subtitle">
+                    What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.
+                </p>
+                <button type="button" class="intro__button" id="openModal">Donate</button>
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <div class="h3">
+                            <h3>Donate</h3>
+                        </div>
+                        <div class="your__name">
+                            Your name
+                            <input type="text" id="name" class="input__field" placeholder="Name">
+                        </div>
+                        <div class="amount">
+                            Amount
+                            <input type="text" id="amount" class="input__field" placeholder="1000$">
+                        </div>
+                        <div class="comment">
+                            <label for="comment">Your comment:</label>
+                            <textarea id="comment" name="comment" class="comment__field" rows="5"></textarea>
+                        </div> 
+                        <div class="btn">
+                            <button id="confirmButton" class="modal__btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__title" id="articles">
+            <div class="wrapper">
+                <h2 class="main__subtitle">Latest articles</h2>
+                <h3 class="main__subtext">Breaking news from the wild</h3>
+            </div>
+        </section>
+        
+        <section class="animals">
+            <button class="button__prev" onclick="changeSlide('prev')">
+                <img src="/src/assets/icons/arrow.svg" alt="arrow prev">
+            </button>
+            <div class="animals__block" id="animalsBlock">
+            </div>
+            <button class="button__next" onclick="changeSlide('next')">
+                <img src="/src/assets/icons/arrow.svg" alt="arrow next">
+            </button>
+        </section>
+        
+        <div class="animal__subtitle">Get notified about new amazing articles</div>
+        
+        <form class="email-form" id="email">
+            <fieldset class="email-form__wrap">
+                <p class="email-form__info">
+                    <input type="text" class="email-form__field" id="email__alert" placeholder="Email" required>
+                </p>
+            </fieldset>
+            <button type="submit" class="email-form__submit">Send</button>
+        </form>
+        
+        <footer class="footer" id="contacts">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="#header" class="footer__logo-link">
+                        <img src="./assets/icons/logo.svg" alt="Survival" class="footer__logo-pic">
+                        <div class="logo">WILDLIFE</div>
+                    </a>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#articles" class="footer__link">Articles</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#about" class="footer__link">About us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#learn-more" class="footer__link">Learn more</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__social">
+                        <li class="footer__item-pic">
+                            <a href="https://www.facebook.com/" target="_blank" class="header__link">
+                                <img src="./assets/icons/face.svg" alt="face" class="footer__pic">
+                            </a>
+                        </li>
+                        <li class="footer__item-pic">
+                            <a href="https://www.instagram.com/" target="_blank" class="header__link">
+                                <img src="./assets/icons/inst.svg" alt="inst" class="footer__pic">
+                            </a>
+                        </li>
+                        <li class="footer__item-pic">
+                            <a href="https://ru.pinterest.com/" target="_blank" class="header__link">
+                                <img src="./assets/icons/pint.svg" alt="pint" class="footer__pic">
+                            </a>
+                        </li>
+                        <li class="footer__item-pic">
+                            <a href="https://web.telegram.org/a/" target="_blank" class="header__link">
+                                <img src="./assets/icons/tg.svg" alt="tg" class="footer__pic">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>
+        </body>
+        </html>
