@@ -53,7 +53,7 @@ const animalCards = {
     deer: `
         <div class="animal__card">
             <figure class="animal__card-deer">
-                <img src="./assets/img/Deer.png" alt="Deer" class="animal__card-deer-bg">
+                <img src="/src/assets/img/Deer.png" alt="Deer" class="animal__card-deer-bg">
                 <h4 class="animal__card-title-deer">Deer</h4>
                 <p class="animal__card-desc-deer">Naturalist investigation</p>
             </figure>
@@ -62,7 +62,7 @@ const animalCards = {
     squirrel: `
         <div class="animal__card">
             <figure class="animal__card-squirrel">
-                <img src="./assets/img/Squirrel.png" alt="Squirrel" class="animal__card-squirrel-bg">
+                <img src="/src/assets/img/Squirrel.png" alt="Squirrel" class="animal__card-squirrel-bg">
                 <h4 class="animal__card-title-squirrel">Squirrel</h4>
                 <p class="animal__card-desc-squirrel">Kamikaze squirrels</p>
             </figure>
@@ -71,7 +71,7 @@ const animalCards = {
     bird: `
         <div class="animal__card">
             <figure class="animal__card-bird">
-                <img src="./assets/img/Bird.png" alt="Bird" class="animal__card-bird-bg">
+                <img src="/src/assets/img/Bird.png" alt="Bird" class="animal__card-bird-bg">
                 <h4 class="animal__card-title-bird">Bird</h4>
                 <p class="animal__card-desc-bird">Birds Fight club</p>
             </figure>
